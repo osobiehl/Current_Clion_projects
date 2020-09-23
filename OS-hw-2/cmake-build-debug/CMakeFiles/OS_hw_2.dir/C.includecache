@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/osobiehl/CLionProjects/OS-hw-2/main.c
+/Users/osobiehl/CLionProjects/OS-hw-2/main.c
 stdio.h
 -
 string.h

@@ -75,6 +75,8 @@ int main(int argc, char* argv[]){
 
 
 			command_line_execution_string[while_loop_exec_counter] = malloc(strlen(line)+1);
+			if (!command_line_execution_string[while_loop_exec_counter])
+				perror("null pointer in malloc call");
 			strcpy(command_line_execution_string[while_loop_exec_counter++], line);
 			if (while_loop_exec_counter >= command_line_execution_max){
 				while_loop_exec_counter = executed_command_index;
@@ -123,6 +125,7 @@ int main(int argc, char* argv[]){
 		int status =0;
 		//corner case: no more new characters are inputted, but our buffer still contains something
 
+		//no need to free extra memory since program terminates
 		if (while_loop_exec_counter != executed_command_index){
 			pid = fork();
 			if (pid < 0){
