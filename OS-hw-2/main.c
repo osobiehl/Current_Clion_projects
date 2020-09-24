@@ -101,16 +101,22 @@ int main(int argc, char* argv[]){
 				if (pid == 0){
 					//execute command in child process
 					command_line_execution_string[command_line_execution_max] = NULL;
-					if (execvp(command_line_execution_string[0], command_line_execution_string) < 0)
+					if (execvp(command_line_execution_string[0], command_line_execution_string) < 0) {
 						perror("error executing execvp");
+						exit(-1);
+					}
 
 				}
 				else {
-					int status;
+					int status ;
 					if (waitpid(pid, &status, 0) == -1){
 						perror("waitpid system call failed");
 						return EXIT_FAILURE;
 					}
+					if(WIFEXITED(status)){
+						exit(-1);
+					}
+					printf("status is: %d\n", status);
 					//free allocated memory in parent process
 					for (int i = executed_command_index; i < command_line_execution_max; i++){
 						 free(command_line_execution_string[i]);
