@@ -14,6 +14,7 @@ int main(int argc, char* argv[]){
 	while ((a = getopt(argc,argv, "n:t")) != -1){
 		switch(a){
 			case 'n':
+				//corner case: no number is specified for n
 				for (int i = 0; i < strlen(argv[optind-1]); i++){
 					if (!isdigit(argv[optind-1][i]))
 					{
@@ -59,7 +60,6 @@ int main(int argc, char* argv[]){
 	}
 	pid_t pid;
 	/*
-	 *
 	 * idea: load up using a "while" loop using fgets, using two iterative layers, the first one parses the input, the second one
 	 * will "load up" the correct amount of inputs, and then do a system call
 	 */
@@ -91,6 +91,7 @@ int main(int argc, char* argv[]){
 					 if (fflush(stderr) == EOF)
 					 	perror("could not perform fflush on stderr\n");
 				}
+				//fork, then execute command
 				pid = fork();
 				if (pid < 0)
 				{
