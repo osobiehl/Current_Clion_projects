@@ -83,7 +83,7 @@ int main(int argc, char* argv[]){
 				// print out execution string:
 				if (print_before_executing){
 					for (int i = 0; i < command_line_execution_max; i++){
-						if (fprintf(stderr, "%s ", command_line_execution_string[i]) < 0)
+						if (
 							perror("fprintf call failed");
 					}
 					 if (fprintf(stderr, "\n") < 0)
