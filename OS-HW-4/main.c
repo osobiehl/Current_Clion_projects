@@ -7,7 +7,7 @@
 #include <pthread.h>
 
 int debug = 0;
-char coins[20+1];
+char coins[20+1] = "OOOOOOOOOOXXXXXXXXXX";
 static pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 static pthread_mutex_t mutex_arr[20];
 
@@ -45,11 +45,10 @@ timeit(int n, void* (*proc)(void *))
 
 void* flip_person(void* ignore){
 	pthread_mutex_lock(&mutex);
-	srand(time(NULL));
 	for (int i = 0; i < 20; i++)
 	{
 		for (int j = 0; j < N; j++){
-			coins[i] = ( rand() % 2 == 0 ? 'O' : 'X');
+			coins[i] = ( coins[i] == 'O' ? 'X' : 'O');
 			if (debug) printf("coin number %d, value: %c\n", i, coins[i]);
 		}
 	}
@@ -59,26 +58,24 @@ void* flip_person(void* ignore){
 }
 
 void* flip_per_coin(void* ignore){
-	srand(time(NULL));
 	for(int i = 0; i < 20; i++)
 	{
-		pthread_mutex_lock(&mutex_arr[i]);
+		pthread_mutex_lock(&mutex);
 		for(int j = 0; j < N ; j++){
-			coins[i] = ( rand() % 2 == 0 ? 'O' : 'X');
+			coins[i] = ( coins[i] == 'O' ? 'X' : 'O');
 			if (debug) printf("coin number %d, value: %c\n", i, coins[i]);
 		}
-		pthread_mutex_unlock(&mutex_arr[i]);
+		pthread_mutex_unlock(&mutex);
 	}
 	return NULL;
 }
 
 void* lock_per_flip(void* ignore){
-	srand(time(NULL));
 	for(int i = 0; i < 20; i++)
 	{
 		for(int j = 0; j < N ; j++){
 			pthread_mutex_lock(&mutex_arr[i]);
-			coins[i] = ( rand() % 2 == 0 ? 'O' : 'X');
+			coins[i] = ( coins[i] == 'O' ? 'X' : 'O');
 			if (debug) printf("coin number %d, value: %c\n", i, coins[i]);
 			pthread_mutex_unlock(&mutex_arr[i]);
 		}
@@ -121,14 +118,6 @@ int main(int argc, char* argv[]) {
 	{
 		pthread_mutex_init(&mutex_arr[i], NULL);
 	}
-	/*
-	 * Initialize coins
-	 */
-	for(int i = 0; i < 20 ; i++){
-		coins[i] = ( rand() % 2 == 0 ? 'O' : 'X');
-		if (debug) printf("coin number %d, value: %c\n", i, coins[i]);
-	}
-
 	if (debug)
 		printf("N: %d, P: %d\n", N, P);
 	//strat 1
