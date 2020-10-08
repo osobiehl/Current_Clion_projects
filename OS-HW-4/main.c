@@ -123,15 +123,18 @@ int main(int argc, char* argv[]) {
 	//strat 1
 	printf("coins: %s  (start-global lock)\n", coins);
 	double res1 = timeit(N, flip_person);
-	printf("%d threads x %d flips: %lf ms\n", P,N,res1);
+	printf("coins: %s  (end-global lock)\n", coins);
+	printf("%d threads x %d flips: %lf ms\n\n", P,N,res1);
 	//strat 2
 	printf("coins: %s  (start-iteration lock)\n", coins);
 	double res2 = timeit(N, flip_per_coin);
-	printf("%d threads x %d flips: %lf ms\n", P,N,res2);
+	printf("coins: %s  (end-iteration lock)\n", coins);
+	printf("%d threads x %d flips: %lf ms\n\n", P,N,res2);
 	//strat 3
 	printf("coins: %s  (start - coin lock)\n", coins);
 	double res3 = timeit(N, lock_per_flip);
-	printf("%d threads x %d flips: %lf ms\n", P,N,res3);
+	printf("coins: %s  (end - coin lock)\n", coins);
+	printf("%d threads x %d flips: %lf ms\n\n", P,N,res3);
 //strategy one
 
 
