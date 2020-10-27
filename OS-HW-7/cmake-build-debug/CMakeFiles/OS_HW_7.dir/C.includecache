@@ -6,11 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/osobiehl/CLionProjects/OS-HW-7/test.c
-unistd.h
-/home/osobiehl/CLionProjects/OS-HW-7/unistd.h
+/Users/osobiehl/CLionProjects/OS-HW-7/main.c
 stdio.h
 -
-sys/wait.h
+regex.h
+-
+unistd.h
+-
+string.h
+-
+stdlib.h
+-
+sys/types.h
 -
 

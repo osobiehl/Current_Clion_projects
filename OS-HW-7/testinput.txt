@@ -1,2 +1,6 @@
-hello this is jose testing some stuff, how y'all
-doing on this blessed day? much love
+{
+ "text": "a value of n where n^{2} and n^{3} together contain each digit once",
+ "number": 69,
+ "found": true,
+ "type": "math"
+}
