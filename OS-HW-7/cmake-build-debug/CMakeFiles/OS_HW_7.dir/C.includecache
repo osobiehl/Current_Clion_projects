@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/osobiehl/CLionProjects/OS-HW-7/test.c
+unistd.h
+/home/osobiehl/CLionProjects/OS-HW-7/unistd.h
+stdio.h
+-
+sys/wait.h
+-
+
