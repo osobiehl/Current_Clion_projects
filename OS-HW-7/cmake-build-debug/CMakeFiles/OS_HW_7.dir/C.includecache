@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/osobiehl/CLionProjects/OS-HW-7/main.c
+/home/osobiehl/CLionProjects/OS-HW-7/main.c
 stdio.h
 -
 regex.h
@@ -18,5 +18,7 @@ string.h
 stdlib.h
 -
 sys/types.h
+-
+sys/wait.h
 -
 
