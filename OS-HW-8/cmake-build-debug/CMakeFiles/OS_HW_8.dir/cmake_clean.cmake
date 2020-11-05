@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/OS_HW_8.dir/clnt_join.c.o"
   "CMakeFiles/OS_HW_8.dir/main.c.o"
   "OS_HW_8"
   "OS_HW_8.pdb"
