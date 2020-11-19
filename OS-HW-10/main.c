@@ -37,6 +37,8 @@ static inline int is_pipe(struct dirent* e){
 
 //global variable b/c I'm lazy
 static char* fd_pattern;
+//another one
+static char* fd_root_path;
 
 int fd( const char* directory, unsigned flags ){
 
@@ -57,9 +59,17 @@ int fd( const char* directory, unsigned flags ){
 		if (e->d_name[0] != '.'){
 
 			//check if it is a directory, avoid infinite recursion (kinda)
-			if (flags == 0)
-				puts(e->d_name);
+			if (flags == 0){
+				char append[PATH_MAX];
+				memset(append, 0, sizeof(append));
+				strcat(append, directory);
+				strcat(append, "/\0");
+				strcat(append, e->d_name);
+				// offset by root path, FUCK BEING EFFICIENT
+				puts(&append[strlen(fd_root_path)]);
+			}
 			else{
+				int will_print = 0;
 				//this is what happens when you don't plan ahead, juergen would publicly humiliate this garbage
 				if ((flags & PATTERN_FLAG)){
 					if (fnmatch(fd_pattern, e->d_name, 0) == 0){
@@ -70,69 +80,85 @@ int fd( const char* directory, unsigned flags ){
 						else{
 							//this is bad code but idc
 							if ((flags & FILE_FLAG) && is_file(e))
-								puts(e->d_name);
+								will_print = 1;
 							else if ((flags & DIRECTORY_FLAG) && is_directory(e))
-								puts(e->d_name);
+								will_print = 1;
 							else if ((flags & SYMBOLIC_FLAG) && is_link(e))
-								puts(e->d_name);
+								will_print = 1;
 							else if ((flags & EXEC_FLAG)){
 								char file_name[PATH_MAX];
 								snprintf(file_name, sizeof(file_name), "%s/%s", directory, e->d_name);
 								struct stat st;
 								if (stat(file_name, &st) == 0 && st.st_mode & S_IXUSR)
-									puts(e->d_name);
+									will_print = 1;
 							}
 							else if ((flags & LOCAL_DOMAIN_FLAG) && is_local_domain(e))
-								puts(e->d_name);
+								will_print = 1;
 							else if ((flags & PIPE_FLAG) && is_pipe(e))
-								puts(e->d_name);
+								will_print = 1;
 
 							else if ((flags & EMPTY_FLAG)){
 								char file_name[PATH_MAX];
 								snprintf(file_name, sizeof(file_name), "%s/%s", directory, e->d_name);
 								struct stat st;
 								if (stat(file_name, &st) == 0 && st.st_size < 1)
-									puts(e->d_name);
+									will_print = 1;
+							}
+							if (will_print){
+								char append[PATH_MAX];
+								memset(append, 0, sizeof(append));
+								strcat(append, directory);
+								strcat(append, "/\0");
+								strcat(append, e->d_name);
+								// offset by root path, FUCK BEING EFFICIENT
+								puts(&append[strlen(fd_root_path)]);
 							}
 							//try to match all given patterns
 						}
 					}
 				}
 				// let the flag games begin!
+
 				else if ((flags & FILE_FLAG) && is_file(e))
-					puts(e->d_name);
+					will_print = 1;
 				else if ((flags & DIRECTORY_FLAG) && is_directory(e))
-					puts(e->d_name);
+					will_print = 1;
 				else if ((flags & SYMBOLIC_FLAG) && is_link(e))
-					puts(e->d_name);
+					will_print = 1;
 				else if ((flags & EXEC_FLAG)){
 					char file_name[PATH_MAX];
 					snprintf(file_name, sizeof(file_name), "%s/%s", directory, e->d_name);
 					struct stat st;
 					if (stat(file_name, &st) == 0 && st.st_mode & S_IXUSR)
-						puts(e->d_name);
+						will_print = 1;
 				}
 				else if ((flags & LOCAL_DOMAIN_FLAG) && is_local_domain(e))
-					puts(e->d_name);
+					will_print = 1;
 				else if ((flags & PIPE_FLAG) && is_pipe(e))
-					puts(e->d_name);
-
+					will_print = 1;
 				else if ((flags & EMPTY_FLAG)){
 					char file_name[PATH_MAX];
 					snprintf(file_name, sizeof(file_name), "%s/%s", directory, e->d_name);
 					struct stat st;
 					if (stat(file_name, &st) == 0 && st.st_size < 1)
-						puts(e->d_name);
+						will_print = 1;
+				}
+				if (will_print){
+					char append[PATH_MAX];
+					memset(append, 0, sizeof(append));
+					strcat(append, directory);
+					strcat(append, "/\0");
+					strcat(append, e->d_name);
+					// offset by root path, FUCK BEING EFFICIENT
+					puts(&append[strlen(fd_root_path)]);
 				}
 				//try to match all given patterns
-
 			}
 			if (e->d_type == DT_DIR) {
 				//append absolute path
 				snprintf(next_path, sizeof(next_path), "%s/%s", directory, e->d_name);
 				fd(next_path, flags);
 			}
-
 		}
 	}
 	closedir(d);
@@ -234,6 +260,7 @@ int main(int argc, char* argv[]) {
 
 	}
 	printf("cwd is: %s\n", cwd);
+	fd_root_path = cwd;
 	fd(cwd, flags);
 	return 0;
 }
