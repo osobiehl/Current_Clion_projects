@@ -3,6 +3,10 @@
 //
 #include <event2/event.h>
 #include <fcntl.h>
+#include <unistd.h>
+#include <stdarg.h>
+#include <string.h>
+#include <stdlib.h>
 struct clnt_t{
 	struct clnt_t* next;
 	int fd;
@@ -10,6 +14,12 @@ struct clnt_t{
 
 }typedef clnt_t;
 clnt_t* clnt_new() {
+	clnt_t * clnt;
+	clnt = calloc(1, sizeof(clnt_t));
+	if (!clnt){
+		perror("calloc");
+		return NULL;
+	}
 
 }
 void clnt_join(evutil_socket_t evfd, short evwhat, void *evarg)
