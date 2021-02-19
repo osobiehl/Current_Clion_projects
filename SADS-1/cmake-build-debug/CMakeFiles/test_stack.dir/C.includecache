@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../rpn.h
+
+../rpn_stack.h
+
+/home/osobiehl/CLionProjects/SADS-1/test/test_stack.c
+stdlib.h
+-
+check.h
+-
+stdio.h
+-
+rpn_stack.h
+/home/osobiehl/CLionProjects/SADS-1/test/rpn_stack.h
+rpn.h
+/home/osobiehl/CLionProjects/SADS-1/test/rpn.h
+

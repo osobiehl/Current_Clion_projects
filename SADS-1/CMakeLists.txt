@@ -1,0 +1,21 @@
+cmake_minimum_required(VERSION 3.17)
+project(SADS_1 C)
+find_package(Threads)
+find_package(PkgConfig)
+
+set(CMAKE_CXX_FLAGS "-g -O0 -Wall -fprofile-arcs -ftest-coverage")
+set(CMAKE_C_FLAGS "-g -O0 -Wall -W -fprofile-arcs -ftest-coverage")
+set(CMAKE_EXE_LINKER_FLAGS "-fprofile-arcs -ftest-coverage")
+
+add_library(rpn_stack rpn_stack.c)
+add_library(rpn rpn.c)
+set(CMAKE_C_STANDARD 99)
+#add_subdirectory(test)
+include_directories(${CMAKE_SOURCE_DIR} ${CHECK_INCLUDE_DIRS})
+link_directories(${CHECK_LIBRARY_DIRS} ${CMAKE_SOURCE_DIR})
+pkg_check_modules(CHECK REQUIRED check)
+add_executable(SADS_1 main.c rpn.h rpn.c rpn_stack.h rpn_stack.c)
+add_executable(test_stack test/test_stack.c)
+#adding math library
+target_link_libraries(SADS_1 m)
+target_link_libraries(test_stack ${CHECK_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT} rpn_stack rpn m)

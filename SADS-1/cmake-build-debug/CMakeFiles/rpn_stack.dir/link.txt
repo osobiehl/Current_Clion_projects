@@ -1,0 +1,2 @@
+/usr/bin/ar qc librpn_stack.a  CMakeFiles/rpn_stack.dir/rpn_stack.c.o
+/usr/bin/ranlib librpn_stack.a

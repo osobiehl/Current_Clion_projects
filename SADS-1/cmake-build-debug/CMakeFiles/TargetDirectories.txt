@@ -1,0 +1,6 @@
+/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles/rpn.dir
+/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles/SADS_1.dir
+/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles/rpn_stack.dir
+/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles/test_stack.dir
