@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/testerino.dir/main.cpp.o  -o testerino 

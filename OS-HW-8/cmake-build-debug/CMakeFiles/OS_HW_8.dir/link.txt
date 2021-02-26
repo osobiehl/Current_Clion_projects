@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/OS_HW_8.dir/main.c.o CMakeFiles/OS_HW_8.dir/clnt_join.c.o  -o OS_HW_8 
+/usr/bin/cc -g   CMakeFiles/OS_HW_8.dir/main.c.o CMakeFiles/OS_HW_8.dir/client.c.o  -o OS_HW_8  -levent 

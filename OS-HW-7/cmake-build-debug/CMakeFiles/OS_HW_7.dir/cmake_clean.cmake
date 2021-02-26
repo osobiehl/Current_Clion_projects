@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/OS_HW_7.dir/main.c.o"
-  "CMakeFiles/OS_HW_7.dir/test.c.o"
   "OS_HW_7"
   "OS_HW_7.pdb"
 )

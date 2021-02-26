@@ -143,32 +143,32 @@ OS_HW_8/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OS_HW_8.dir/build.make CMakeFiles/OS_HW_8.dir/build
 .PHONY : OS_HW_8/fast
 
-clnt_join.o: clnt_join.c.o
+client.o: client.c.o
 
-.PHONY : clnt_join.o
+.PHONY : client.o
 
 # target to build an object file
-clnt_join.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OS_HW_8.dir/build.make CMakeFiles/OS_HW_8.dir/clnt_join.c.o
-.PHONY : clnt_join.c.o
+client.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OS_HW_8.dir/build.make CMakeFiles/OS_HW_8.dir/client.c.o
+.PHONY : client.c.o
 
-clnt_join.i: clnt_join.c.i
+client.i: client.c.i
 
-.PHONY : clnt_join.i
+.PHONY : client.i
 
 # target to preprocess a source file
-clnt_join.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OS_HW_8.dir/build.make CMakeFiles/OS_HW_8.dir/clnt_join.c.i
-.PHONY : clnt_join.c.i
+client.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OS_HW_8.dir/build.make CMakeFiles/OS_HW_8.dir/client.c.i
+.PHONY : client.c.i
 
-clnt_join.s: clnt_join.c.s
+client.s: client.c.s
 
-.PHONY : clnt_join.s
+.PHONY : client.s
 
 # target to generate assembly for a file
-clnt_join.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OS_HW_8.dir/build.make CMakeFiles/OS_HW_8.dir/clnt_join.c.s
-.PHONY : clnt_join.c.s
+client.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OS_HW_8.dir/build.make CMakeFiles/OS_HW_8.dir/client.c.s
+.PHONY : client.c.s
 
 main.o: main.c.o
 
@@ -206,9 +206,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... OS_HW_8"
-	@echo "... clnt_join.o"
-	@echo "... clnt_join.i"
-	@echo "... clnt_join.s"
+	@echo "... client.o"
+	@echo "... client.i"
+	@echo "... client.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

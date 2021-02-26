@@ -73,10 +73,12 @@ CMAKE_BINARY_DIR = /home/osobiehl/CLionProjects/SADS-1/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/rpn.dir/all
-all: CMakeFiles/SADS_1.dir/all
-all: CMakeFiles/rpn_stack.dir/all
 all: CMakeFiles/test_stack.dir/all
+all: CMakeFiles/rpn_stack.dir/all
+all: CMakeFiles/infix.dir/all
+all: CMakeFiles/rpn.dir/all
+all: CMakeFiles/run_infix.dir/all
+all: CMakeFiles/rpnCalc.dir/all
 
 .PHONY : all
 
@@ -86,66 +88,43 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/rpn.dir/clean
-clean: CMakeFiles/SADS_1.dir/clean
-clean: CMakeFiles/rpn_stack.dir/clean
 clean: CMakeFiles/test_stack.dir/clean
+clean: CMakeFiles/rpn_stack.dir/clean
+clean: CMakeFiles/infix.dir/clean
+clean: CMakeFiles/rpn.dir/clean
+clean: CMakeFiles/run_infix.dir/clean
+clean: CMakeFiles/rpnCalc.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/rpn.dir
+# Target rules for target CMakeFiles/test_stack.dir
 
 # All Build rule for target.
-CMakeFiles/rpn.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn.dir/build.make CMakeFiles/rpn.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn.dir/build.make CMakeFiles/rpn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles --progress-num=5,6 "Built target rpn"
-.PHONY : CMakeFiles/rpn.dir/all
+CMakeFiles/test_stack.dir/all: CMakeFiles/rpn_stack.dir/all
+CMakeFiles/test_stack.dir/all: CMakeFiles/infix.dir/all
+CMakeFiles/test_stack.dir/all: CMakeFiles/rpn.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_stack.dir/build.make CMakeFiles/test_stack.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_stack.dir/build.make CMakeFiles/test_stack.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles --progress-num=16,17 "Built target test_stack"
+.PHONY : CMakeFiles/test_stack.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/rpn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rpn.dir/all
+CMakeFiles/test_stack.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles 8
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_stack.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/rpn.dir/rule
+.PHONY : CMakeFiles/test_stack.dir/rule
 
 # Convenience name for target.
-rpn: CMakeFiles/rpn.dir/rule
+test_stack: CMakeFiles/test_stack.dir/rule
 
-.PHONY : rpn
-
-# clean rule for target.
-CMakeFiles/rpn.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn.dir/build.make CMakeFiles/rpn.dir/clean
-.PHONY : CMakeFiles/rpn.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/SADS_1.dir
-
-# All Build rule for target.
-CMakeFiles/SADS_1.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SADS_1.dir/build.make CMakeFiles/SADS_1.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SADS_1.dir/build.make CMakeFiles/SADS_1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target SADS_1"
-.PHONY : CMakeFiles/SADS_1.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/SADS_1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SADS_1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/SADS_1.dir/rule
-
-# Convenience name for target.
-SADS_1: CMakeFiles/SADS_1.dir/rule
-
-.PHONY : SADS_1
+.PHONY : test_stack
 
 # clean rule for target.
-CMakeFiles/SADS_1.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SADS_1.dir/build.make CMakeFiles/SADS_1.dir/clean
-.PHONY : CMakeFiles/SADS_1.dir/clean
+CMakeFiles/test_stack.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_stack.dir/build.make CMakeFiles/test_stack.dir/clean
+.PHONY : CMakeFiles/test_stack.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/rpn_stack.dir
@@ -154,7 +133,7 @@ CMakeFiles/SADS_1.dir/clean:
 CMakeFiles/rpn_stack.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn_stack.dir/build.make CMakeFiles/rpn_stack.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn_stack.dir/build.make CMakeFiles/rpn_stack.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles --progress-num=7,8 "Built target rpn_stack"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target rpn_stack"
 .PHONY : CMakeFiles/rpn_stack.dir/all
 
 # Build rule for subdir invocation for target.
@@ -175,32 +154,112 @@ CMakeFiles/rpn_stack.dir/clean:
 .PHONY : CMakeFiles/rpn_stack.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/test_stack.dir
+# Target rules for target CMakeFiles/infix.dir
 
 # All Build rule for target.
-CMakeFiles/test_stack.dir/all: CMakeFiles/rpn.dir/all
-CMakeFiles/test_stack.dir/all: CMakeFiles/rpn_stack.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_stack.dir/build.make CMakeFiles/test_stack.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_stack.dir/build.make CMakeFiles/test_stack.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles --progress-num=9,10 "Built target test_stack"
-.PHONY : CMakeFiles/test_stack.dir/all
+CMakeFiles/infix.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infix.dir/build.make CMakeFiles/infix.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infix.dir/build.make CMakeFiles/infix.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target infix"
+.PHONY : CMakeFiles/infix.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test_stack.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles 6
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/test_stack.dir/all
+CMakeFiles/infix.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/infix.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/test_stack.dir/rule
+.PHONY : CMakeFiles/infix.dir/rule
 
 # Convenience name for target.
-test_stack: CMakeFiles/test_stack.dir/rule
+infix: CMakeFiles/infix.dir/rule
 
-.PHONY : test_stack
+.PHONY : infix
 
 # clean rule for target.
-CMakeFiles/test_stack.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_stack.dir/build.make CMakeFiles/test_stack.dir/clean
-.PHONY : CMakeFiles/test_stack.dir/clean
+CMakeFiles/infix.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infix.dir/build.make CMakeFiles/infix.dir/clean
+.PHONY : CMakeFiles/infix.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/rpn.dir
+
+# All Build rule for target.
+CMakeFiles/rpn.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn.dir/build.make CMakeFiles/rpn.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn.dir/build.make CMakeFiles/rpn.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles --progress-num=3,4 "Built target rpn"
+.PHONY : CMakeFiles/rpn.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/rpn.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rpn.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/rpn.dir/rule
+
+# Convenience name for target.
+rpn: CMakeFiles/rpn.dir/rule
+
+.PHONY : rpn
+
+# clean rule for target.
+CMakeFiles/rpn.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn.dir/build.make CMakeFiles/rpn.dir/clean
+.PHONY : CMakeFiles/rpn.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/run_infix.dir
+
+# All Build rule for target.
+CMakeFiles/run_infix.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_infix.dir/build.make CMakeFiles/run_infix.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_infix.dir/build.make CMakeFiles/run_infix.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles --progress-num=11,12,13,14,15 "Built target run_infix"
+.PHONY : CMakeFiles/run_infix.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/run_infix.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/run_infix.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/run_infix.dir/rule
+
+# Convenience name for target.
+run_infix: CMakeFiles/run_infix.dir/rule
+
+.PHONY : run_infix
+
+# clean rule for target.
+CMakeFiles/run_infix.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_infix.dir/build.make CMakeFiles/run_infix.dir/clean
+.PHONY : CMakeFiles/run_infix.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/rpnCalc.dir
+
+# All Build rule for target.
+CMakeFiles/rpnCalc.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpnCalc.dir/build.make CMakeFiles/rpnCalc.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpnCalc.dir/build.make CMakeFiles/rpnCalc.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles --progress-num=5,6,7,8 "Built target rpnCalc"
+.PHONY : CMakeFiles/rpnCalc.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/rpnCalc.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/rpnCalc.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/rpnCalc.dir/rule
+
+# Convenience name for target.
+rpnCalc: CMakeFiles/rpnCalc.dir/rule
+
+.PHONY : rpnCalc
+
+# clean rule for target.
+CMakeFiles/rpnCalc.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpnCalc.dir/build.make CMakeFiles/rpnCalc.dir/clean
+.PHONY : CMakeFiles/rpnCalc.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

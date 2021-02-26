@@ -68,7 +68,10 @@ char* fetch() {
 		int status;
 		(void) close(fdes[1]);
 		char* res = readall(fdes[0]);
-		waitpid(pid, &status, 0);
+		if (waitpid(pid, &status, 0) == -1) {
+			perror("waitpid");
+			exit(EXIT_FAILURE);
+		}
 		if (WIFSIGNALED(status)){
 			perror("error occured in child process");
 			exit(EXIT_FAILURE);
@@ -84,7 +87,8 @@ char* RegexParse( char* input, char* Search){
 		regmatch_t match[2];
 		//put quotes around string
 		char reg_match[] = "\":\\s*([^\n]+),\0";
-		char cur_string[strlen(Search) + strlen(reg_match) + 6];
+		//add some padding because I'm bad at math
+		char cur_string[strlen(Search) + strlen(reg_match) + 2];
 		strcpy(cur_string, Search);
 		strcat(cur_string, reg_match);
 		int reti = regcomp(&regex, cur_string, REG_EXTENDED );
@@ -111,9 +115,12 @@ char* RegexParse( char* input, char* Search){
 				res[i] = input[start+i];
 			}
 		}
+		//free regex expression (can be
+		regfree(&regex);
 		return res;
 }
 unsigned play(unsigned n, unsigned score, char *text, long answer){
+	//	printf("%ld\n", answer);
 	int cur_score = 8;
 	if ( printf("Q%d: %s?\n", n, text) < 0){
 		perror("printf");
@@ -177,7 +184,7 @@ unsigned play(unsigned n, unsigned score, char *text, long answer){
 			}
 		}
 		else{
-			if (printf("Your total score is %u/%u points.\n", score, 8 * n) < 0 ){
+			if (printf("\nYour total score is %u/%u points.\n", score, 8 * n) < 0 ){
 				perror("printf");
 				exit(EXIT_FAILURE);
 			}

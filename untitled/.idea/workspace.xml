@@ -1,7 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
-    <generated />
+    <generated>
+      <config projectName="untitled" targetName="untitled" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -9,7 +29,47 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="44f8a0c6-c692-4b0b-a4d7-2031c1cee24c" name="Default Changelist" comment="" />
+    <list default="true" id="f1db49e1-aee5-469e-9a42-d903a5fb6b5c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../OS-HW-4/cmake-build-debug/CMakeFiles/OS_HW_4.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-4/cmake-build-debug/CMakeFiles/OS_HW_4.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-4/cmake-build-debug/OS_HW_4" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-4/cmake-build-debug/OS_HW_4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-7/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-7/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/CMakeFiles/OS_HW_7.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/CMakeFiles/OS_HW_7.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/CMakeFiles/OS_HW_7.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/CMakeFiles/OS_HW_7.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/CMakeFiles/OS_HW_7.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/CMakeFiles/OS_HW_7.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/CMakeFiles/OS_HW_7.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/CMakeFiles/OS_HW_7.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/CMakeFiles/OS_HW_7.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/CMakeFiles/OS_HW_7.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/CMakeFiles/OS_HW_7.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/CMakeFiles/OS_HW_7.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/OS_HW_7" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/OS_HW_7" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/OS_HW_7.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-7/cmake-build-debug/OS_HW_7.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-7/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-7/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-7/test" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-7/test" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-8/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-8/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-8/clnt_join.c" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-8/client.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/CMakeFiles/OS_HW_8.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/CMakeFiles/OS_HW_8.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/CMakeFiles/OS_HW_8.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/CMakeFiles/OS_HW_8.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/CMakeFiles/OS_HW_8.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/CMakeFiles/OS_HW_8.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/CMakeFiles/OS_HW_8.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/CMakeFiles/OS_HW_8.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/CMakeFiles/OS_HW_8.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/CMakeFiles/OS_HW_8.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/CMakeFiles/OS_HW_8.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/CMakeFiles/OS_HW_8.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/CMakeFiles/OS_HW_8.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/CMakeFiles/OS_HW_8.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/CMakeFiles/OS_HW_8.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/CMakeFiles/OS_HW_8.dir/main.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/OS_HW_8" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/OS_HW_8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/OS_HW_8.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-8/cmake-build-debug/OS_HW_8.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS-HW-8/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../OS-HW-8/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OS_HW_7/sample_input" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/untitled.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +78,12 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ProjectId" id="1hXj6vUYHEVllKYafllKngyVudq" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1jsyfQCgGha6CMNNcxXRNqK3hN6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -27,20 +92,84 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="untitled" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="6969" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="untitled" TARGET_NAME="untitled" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="untitled" RUN_TARGET_NAME="untitled">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="44f8a0c6-c692-4b0b-a4d7-2031c1cee24c" name="Default Changelist" comment="" />
-      <created>1600164159588</created>
+      <changelist id="f1db49e1-aee5-469e-9a42-d903a5fb6b5c" name="Default Changelist" comment="" />
+      <created>1604607196199</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1600164159588</updated>
-      <workItem from="1600164160892" duration="6000" />
+      <updated>1604607196199</updated>
+      <workItem from="1604607197307" duration="151000" />
+      <workItem from="1604607409572" duration="153000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="418" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604607311822">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="418" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.985@0.27.1920.985" timestamp="1604607311822" />
+    <state width="1874" height="313" key="GridCell.Tab.0.bottom" timestamp="1604607561863">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="1874" height="313" key="GridCell.Tab.0.bottom/0.27.1920.985@0.27.1920.985" timestamp="1604607561863" />
+    <state width="1874" height="313" key="GridCell.Tab.0.center" timestamp="1604607561863">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="1874" height="313" key="GridCell.Tab.0.center/0.27.1920.985@0.27.1920.985" timestamp="1604607561863" />
+    <state width="1874" height="313" key="GridCell.Tab.0.left" timestamp="1604607561863">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="1874" height="313" key="GridCell.Tab.0.left/0.27.1920.985@0.27.1920.985" timestamp="1604607561863" />
+    <state width="1874" height="313" key="GridCell.Tab.0.right" timestamp="1604607561863">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="1874" height="313" key="GridCell.Tab.0.right/0.27.1920.985@0.27.1920.985" timestamp="1604607561863" />
+    <state width="1874" height="313" key="GridCell.Tab.1.bottom" timestamp="1604607561864">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="1874" height="313" key="GridCell.Tab.1.bottom/0.27.1920.985@0.27.1920.985" timestamp="1604607561864" />
+    <state width="1874" height="313" key="GridCell.Tab.1.center" timestamp="1604607561863">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="1874" height="313" key="GridCell.Tab.1.center/0.27.1920.985@0.27.1920.985" timestamp="1604607561863" />
+    <state width="1874" height="313" key="GridCell.Tab.1.left" timestamp="1604607561863">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="1874" height="313" key="GridCell.Tab.1.left/0.27.1920.985@0.27.1920.985" timestamp="1604607561863" />
+    <state width="1874" height="313" key="GridCell.Tab.1.right" timestamp="1604607561863">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="1874" height="313" key="GridCell.Tab.1.right/0.27.1920.985@0.27.1920.985" timestamp="1604607561863" />
   </component>
 </project>

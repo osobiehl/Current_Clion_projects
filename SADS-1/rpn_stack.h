@@ -11,7 +11,14 @@
 * since we use this stack for building an RPN calculator.
 */
 
-typedef struct _rpn_stack rpn_stack_t;
+typedef struct _rpn_stack{
+	void** datapointers;
+	int size;
+	int current;
+
+
+} rpn_stack_t;
+
 /**
 * \brief Create a new empty stack.
 *

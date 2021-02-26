@@ -1,0 +1,1 @@
+/usr/bin/cc -g -O0 -Wall -W -fprofile-arcs -ftest-coverage -g  -fprofile-arcs -ftest-coverage CMakeFiles/rpnCalc.dir/main.c.o CMakeFiles/rpnCalc.dir/rpn.c.o CMakeFiles/rpnCalc.dir/rpn_stack.c.o  -o rpnCalc   -L/home/osobiehl/CLionProjects/SADS-1  -Wl,-rpath,/home/osobiehl/CLionProjects/SADS-1 -lm 

@@ -94,12 +94,12 @@ clean: CMakeFiles/OS_HW_7.dir/clean
 CMakeFiles/OS_HW_7.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OS_HW_7.dir/build.make CMakeFiles/OS_HW_7.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OS_HW_7.dir/build.make CMakeFiles/OS_HW_7.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osobiehl/CLionProjects/OS-HW-7/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target OS_HW_7"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/osobiehl/CLionProjects/OS-HW-7/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target OS_HW_7"
 .PHONY : CMakeFiles/OS_HW_7.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/OS_HW_7.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/osobiehl/CLionProjects/OS-HW-7/cmake-build-debug/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/osobiehl/CLionProjects/OS-HW-7/cmake-build-debug/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/OS_HW_7.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/osobiehl/CLionProjects/OS-HW-7/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/OS_HW_7.dir/rule

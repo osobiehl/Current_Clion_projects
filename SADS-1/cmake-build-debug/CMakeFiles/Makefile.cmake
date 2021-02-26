@@ -51,8 +51,10 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/rpn.dir/DependInfo.cmake"
-  "CMakeFiles/SADS_1.dir/DependInfo.cmake"
-  "CMakeFiles/rpn_stack.dir/DependInfo.cmake"
   "CMakeFiles/test_stack.dir/DependInfo.cmake"
+  "CMakeFiles/rpn_stack.dir/DependInfo.cmake"
+  "CMakeFiles/infix.dir/DependInfo.cmake"
+  "CMakeFiles/rpn.dir/DependInfo.cmake"
+  "CMakeFiles/run_infix.dir/DependInfo.cmake"
+  "CMakeFiles/rpnCalc.dir/DependInfo.cmake"
   )

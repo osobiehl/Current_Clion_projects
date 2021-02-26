@@ -79,9 +79,6 @@
 		<Unit filename="/home/osobiehl/CLionProjects/OS-HW-7/main.c">
 			<Option target="OS_HW_7"/>
 		</Unit>
-		<Unit filename="/home/osobiehl/CLionProjects/OS-HW-7/test.c">
-			<Option target="OS_HW_7"/>
-		</Unit>
 		<Unit filename="/home/osobiehl/CLionProjects/OS-HW-7/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

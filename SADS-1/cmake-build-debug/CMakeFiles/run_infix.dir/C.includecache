@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/osobiehl/CLionProjects/SADS-1/rpn.c
+rpn.h
+/home/osobiehl/CLionProjects/SADS-1/rpn.h
+string.h
+/home/osobiehl/CLionProjects/SADS-1/string.h
+stdlib.h
+-
+stdio.h
+-
+rpn_stack.h
+/home/osobiehl/CLionProjects/SADS-1/rpn_stack.h
+ctype.h
+-
+math.h
+-
+
+/home/osobiehl/CLionProjects/SADS-1/rpn.h
+
+/home/osobiehl/CLionProjects/SADS-1/rpn_stack.h
+

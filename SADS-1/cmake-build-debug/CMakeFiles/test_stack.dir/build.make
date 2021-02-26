@@ -101,6 +101,7 @@ test_stack: CMakeFiles/test_stack.dir/test/test_stack.c.o
 test_stack: CMakeFiles/test_stack.dir/build.make
 test_stack: librpn_stack.a
 test_stack: librpn.a
+test_stack: libinfix.a
 test_stack: CMakeFiles/test_stack.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable test_stack"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_stack.dir/link.txt --verbose=$(VERBOSE)

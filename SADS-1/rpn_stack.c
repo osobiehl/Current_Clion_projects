@@ -6,13 +6,6 @@
 // Created by osobiehl on 18.02.21.
 //
 
-typedef struct _rpn_stack{
-	void** datapointers;
-	int size;
-	int current;
-
-
-} rpn_stack_t;
 
 static inline void verify_stack(rpn_stack_t* s){
 	if (!s){
@@ -116,4 +109,5 @@ rpn_stack_del(rpn_stack_t *s){
 	verify_stack(s);
 	// NOT FREEING EACH ELEMENT TO STOP INVALID FREE
 	free(s->datapointers);
+	free(s);
 }

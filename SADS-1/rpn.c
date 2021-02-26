@@ -36,7 +36,7 @@ int rpn_eval_expr(const char *expr, char **result){
 	}
 	tokens[size +1] = NULL;
 	if (DEBUG){
-		for (int i = 0; i < size; i++){
+		for (int i = 0; i <= size; i++){
 			puts(tokens[i]);
 		}
 	}
@@ -85,8 +85,15 @@ int rpn_eval_token(char* token[], char** result){
 	}
 	rpn_stack_t* stack = rpn_stack_new();
 	int total_tokens = 0;
-	for (int i = 0; token[i] != NULL; i++)
+	if (DEBUG){
+		puts("printing input tokens: ");
+	}
+	for (int i = 0; token[i] != NULL; i++) {
 		total_tokens++;
+		if (DEBUG) {
+			printf("%s ", token[i]);
+		}
+	}
 	// since I'm not malloc'ing anything, I have to make sure to not share addresses
 	// inefficient but memory is cheap
 	int potential_operand_results[total_tokens+1];
@@ -103,11 +110,17 @@ int rpn_eval_token(char* token[], char** result){
 		// case: we have an operator
 		else if (rpn_isOperator(token[i])){
 			char op = *token[i];
-			if (rpn_stack_empty(stack))
+			if (rpn_stack_empty(stack)) {
+				rpn_stack_del(stack);
 				return RPN_MISSING_OPERAND;
+				free(stack);
+			}
 			int operand1 = *(int*)rpn_stack_pop(stack);
-			if (rpn_stack_empty(stack))
+			if (rpn_stack_empty(stack)) {
+				rpn_stack_del(stack);
 				return RPN_MISSING_OPERAND;
+
+			}
 			int operand2 = *(int*)rpn_stack_pop(stack);
 			int res;
 			switch(op){
@@ -124,7 +137,8 @@ int rpn_eval_token(char* token[], char** result){
 					if (operand1 == 0) {
 
 						if (DEBUG)
-							perror("division by zero!");
+							printf("division by zero!");
+						rpn_stack_del(stack);
 						return RPN_ARITHMETIC_ERROR;
 					}
 					res = operand2 / operand1;
@@ -134,11 +148,13 @@ int rpn_eval_token(char* token[], char** result){
 
 						if (DEBUG)
 							perror("modulo by zero!");
+						rpn_stack_del(stack);
 						return RPN_ARITHMETIC_ERROR;
 					}
 					res = operand2 % operand1;
 					break;
 				default:
+					rpn_stack_del(stack);
 					return RPN_INVALID_TOKEN;
 					break;
 			}
@@ -148,6 +164,7 @@ int rpn_eval_token(char* token[], char** result){
 		else {
 			//need to print and exit here because I'm lazy and adhering to the api
 			printf("rpnc: invalid token \'%s\'\n", token[i]);
+			rpn_stack_del(stack);
 			return RPN_INVALID_TOKEN;
 		}
 
@@ -155,9 +172,13 @@ int rpn_eval_token(char* token[], char** result){
 	}
 	//this case should never happen but whatever
 	if (rpn_stack_empty(stack)) {
+		rpn_stack_del(stack);
 		return RPN_MISSING_OPERAND;
 	}
 	int final_result = *(int*)rpn_stack_pop(stack);
+	if (DEBUG) {
+		printf("final result: %d\n", final_result);
+	}
 	//case: there's more stuff in the stack
 	if (!rpn_stack_empty(stack)){
 		if (DEBUG){
@@ -168,6 +189,7 @@ int rpn_eval_token(char* token[], char** result){
 			}
 			printf("\n");
 		}
+		rpn_stack_del(stack);
 		return RPN_MISSING_OPERATOR;
 	}
 
@@ -175,13 +197,13 @@ int rpn_eval_token(char* token[], char** result){
 	if (DEBUG)
 	{
 		printf("input: %d", final_result);
-		printf("bytes used: %lu \n", (unsigned long) ((ceil(log10(final_result) + 1)) * sizeof(char)));
+		printf("bytes used: %lu \n", (unsigned long) ((ceil(log10( abs(final_result)) + 2)) * sizeof(char)));
 	}
 	char* ret_str;
 	if (final_result != 0)
-		ret_str = malloc((unsigned long) (ceil(log10(final_result) + 1)) * sizeof(char));
+		ret_str = (char*) malloc((unsigned long) (ceil(log10( abs(final_result)) + 2)) * sizeof(char));
 	else
-		ret_str = malloc( sizeof(char) * 2);
+		ret_str = ( char*) malloc( sizeof(char) * 2);
 	if (!ret_str){
 		perror("out of memory!" );
 		exit(EXIT_FAILURE);
@@ -192,6 +214,7 @@ int rpn_eval_token(char* token[], char** result){
 	}
 	// ThIs ToOk mE OnE hOUr
 	*result = ret_str;
+	rpn_stack_del(stack);
 	return RPN_OK;
 }
 	char* rpn_strerror(int errnum)

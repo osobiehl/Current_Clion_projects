@@ -7,7 +7,7 @@
 #include <stdio.h>
 #include "rpn_stack.h"
 #include "rpn.h"
-
+#include "infix.h"
 
 /*
  * We introduce a simple data structure so that we can make test cases
@@ -82,36 +82,65 @@ START_TEST(test_rpn)
 		ck_assert_int_eq(r, RPN_INVALID_TOKEN);
 		r = rpn_eval_expr("5 0 /", &str);
 		ck_assert_int_eq(r, RPN_ARITHMETIC_ERROR);
-
-
-
 	}
 END_TEST
 
+START_TEST(test_infix)
+	{
+		rpn_test_t arr[] = {
+				{"1 + 1", "2"},
+				{"2 * 2 + 5", "9"},
+				{ "2 * ( 2 + 5 )", "14"},
+				{ "22 % 6 * 10", "40"},
+				{ "69 - 9", "60"},
+				{"1 + ( 1 + ( 1 + 1 ) )", "4"},
+				{"1 * ( 1 + 1 * 5 )", "6"},
+				{"2 + 2 - 5 * 10", "-46"},
+				{" 5 + ( 3 * ( 2 + 1 ) )", "14"},
+				{" 5 + 5 * 5 * 5", "130"},
+				{" 5 + 5 * 5 / 5", "10"},
+				{NULL, NULL}
+		};
+		char* str;
+		for (int i = 0; arr[i].input != NULL; i++){
+			int r = expr_infix_eval(arr[i].input, &str);
+			ck_assert_str_eq(arr[i].output, str);
+			ck_assert_int_eq(r, RPN_OK);
+		}
+		//corner cases
+		int r = expr_infix_eval("5 5 5 5 5", &str);
+		ck_assert_int_eq(r, INFIX_SYNTAX_ERROR);
+		r = expr_infix_eval("5 5 + +", &str);
+		ck_assert_int_eq(r, INFIX_SYNTAX_ERROR);
+		r = expr_infix_eval("foo", &str);
+		ck_assert_int_eq(r, INFIX_INVALID_TOKEN);
+		r = expr_infix_eval("5 / 0", &str);
+		ck_assert_int_eq(r, RPN_ARITHMETIC_ERROR);
+	}
+END_TEST
 static Suite*
 gdb_suite(void)
 {
 	Suite *s;
-	TCase *tc_gcd, *tc_lcm;
+	TCase *tc_gcd, *tc_lcm, *tc_infix;
 
 	s = suite_create("all");
 	tc_gcd = tcase_create("gcd");
 	tc_lcm = tcase_create("lcm");
+	tc_infix= tcase_create("infix");
 
 	tcase_add_test(tc_gcd, test_stack);
 	suite_add_tcase(s, tc_gcd);
 	tcase_add_test(tc_lcm, test_rpn);
 	suite_add_tcase(s, tc_lcm);
+	tcase_add_test(tc_infix, test_infix);
+	suite_add_tcase(s, tc_infix);
 	return s;
 }
 
 int main(void)
 {
-	rpn_stack_t *x = rpn_stack_new();
-	if (!x)
-	{
-		printf("X IS NULL!\n");
-	}
+
 	int number_failed;
 	Suite *s;
 	SRunner *sr;

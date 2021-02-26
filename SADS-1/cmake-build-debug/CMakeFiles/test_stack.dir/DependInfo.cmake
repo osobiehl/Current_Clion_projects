@@ -17,6 +17,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles/rpn_stack.dir/DependInfo.cmake"
   "/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles/rpn.dir/DependInfo.cmake"
+  "/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/CMakeFiles/infix.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

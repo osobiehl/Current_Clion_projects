@@ -90,29 +90,29 @@ CMakeFiles/OS_HW_8.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/OS_HW_8.dir/main.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/osobiehl/CLionProjects/OS-HW-8/main.c -o CMakeFiles/OS_HW_8.dir/main.c.s
 
-CMakeFiles/OS_HW_8.dir/clnt_join.c.o: CMakeFiles/OS_HW_8.dir/flags.make
-CMakeFiles/OS_HW_8.dir/clnt_join.c.o: ../clnt_join.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/osobiehl/CLionProjects/OS-HW-8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/OS_HW_8.dir/clnt_join.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/OS_HW_8.dir/clnt_join.c.o   -c /home/osobiehl/CLionProjects/OS-HW-8/clnt_join.c
+CMakeFiles/OS_HW_8.dir/client.c.o: CMakeFiles/OS_HW_8.dir/flags.make
+CMakeFiles/OS_HW_8.dir/client.c.o: ../client.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/osobiehl/CLionProjects/OS-HW-8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/OS_HW_8.dir/client.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/OS_HW_8.dir/client.c.o   -c /home/osobiehl/CLionProjects/OS-HW-8/client.c
 
-CMakeFiles/OS_HW_8.dir/clnt_join.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/OS_HW_8.dir/clnt_join.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/osobiehl/CLionProjects/OS-HW-8/clnt_join.c > CMakeFiles/OS_HW_8.dir/clnt_join.c.i
+CMakeFiles/OS_HW_8.dir/client.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/OS_HW_8.dir/client.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/osobiehl/CLionProjects/OS-HW-8/client.c > CMakeFiles/OS_HW_8.dir/client.c.i
 
-CMakeFiles/OS_HW_8.dir/clnt_join.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/OS_HW_8.dir/clnt_join.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/osobiehl/CLionProjects/OS-HW-8/clnt_join.c -o CMakeFiles/OS_HW_8.dir/clnt_join.c.s
+CMakeFiles/OS_HW_8.dir/client.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/OS_HW_8.dir/client.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/osobiehl/CLionProjects/OS-HW-8/client.c -o CMakeFiles/OS_HW_8.dir/client.c.s
 
 # Object files for target OS_HW_8
 OS_HW_8_OBJECTS = \
 "CMakeFiles/OS_HW_8.dir/main.c.o" \
-"CMakeFiles/OS_HW_8.dir/clnt_join.c.o"
+"CMakeFiles/OS_HW_8.dir/client.c.o"
 
 # External object files for target OS_HW_8
 OS_HW_8_EXTERNAL_OBJECTS =
 
 OS_HW_8: CMakeFiles/OS_HW_8.dir/main.c.o
-OS_HW_8: CMakeFiles/OS_HW_8.dir/clnt_join.c.o
+OS_HW_8: CMakeFiles/OS_HW_8.dir/client.c.o
 OS_HW_8: CMakeFiles/OS_HW_8.dir/build.make
 OS_HW_8: CMakeFiles/OS_HW_8.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/osobiehl/CLionProjects/OS-HW-8/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable OS_HW_8"

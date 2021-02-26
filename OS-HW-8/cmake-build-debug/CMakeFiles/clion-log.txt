@@ -1,4 +1,7 @@
 /home/osobiehl/Downloads/clion-2020.2.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/osobiehl/CLionProjects/OS-HW-8
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.1") 
+-- Checking for module 'libevent'
+--   Found libevent, version 2.1.11-stable
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/osobiehl/CLionProjects/OS-HW-8/cmake-build-debug

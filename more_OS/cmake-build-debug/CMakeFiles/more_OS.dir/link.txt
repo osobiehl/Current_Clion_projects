@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/more_OS.dir/main.c.o CMakeFiles/more_OS.dir/test.c.o  -o more_OS 

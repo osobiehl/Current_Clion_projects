@@ -1,0 +1,2 @@
+/usr/bin/ar qc libinfix.a  CMakeFiles/infix.dir/infix.c.o
+/usr/bin/ranlib libinfix.a

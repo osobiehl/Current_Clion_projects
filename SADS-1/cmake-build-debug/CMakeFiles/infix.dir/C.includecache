@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/osobiehl/CLionProjects/SADS-1/infix.c
+infix.h
+/home/osobiehl/CLionProjects/SADS-1/infix.h
+stdlib.h
+-
+stdio.h
+-
+string.h
+-
+rpn_stack.h
+/home/osobiehl/CLionProjects/SADS-1/rpn_stack.h
+ctype.h
+-
+rpn.h
+/home/osobiehl/CLionProjects/SADS-1/rpn.h
+
+/home/osobiehl/CLionProjects/SADS-1/infix.h
+
+/home/osobiehl/CLionProjects/SADS-1/rpn.h
+
+/home/osobiehl/CLionProjects/SADS-1/rpn_stack.h
+

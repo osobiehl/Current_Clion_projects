@@ -1,1 +1,4 @@
-CMakeLists.txt not found in /home/osobiehl/CLionProjects/untitled Select CMakeLists.txt file...
+/home/osobiehl/Downloads/clion-2020.2.1/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/osobiehl/CLionProjects/untitled
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/osobiehl/CLionProjects/untitled/cmake-build-debug

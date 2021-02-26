@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.15)
 project(OS_HW_8 C)
-
+find_package(PkgConfig)
+pkg_check_modules(LIBEVENT REQUIRED libevent)
 set(CMAKE_C_STANDARD 99)
-
-add_executable(OS_HW_8 main.c clnt_join.c)
+include_directories(${LIBEVENT_INCLUDE_DIRS})
+link_directories(${LIBEVENT_LIBRARY_DIRS})
+add_executable(OS_HW_8 main.c client.c)
+target_link_libraries(OS_HW_8 ${LIBEVENT_LIBRARIES})

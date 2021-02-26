@@ -6,6 +6,8 @@
 
 #IncludeRegexTransform: 
 
+../infix.h
+
 ../rpn.h
 
 ../rpn_stack.h
@@ -21,4 +23,6 @@ rpn_stack.h
 /home/osobiehl/CLionProjects/SADS-1/test/rpn_stack.h
 rpn.h
 /home/osobiehl/CLionProjects/SADS-1/test/rpn.h
+infix.h
+/home/osobiehl/CLionProjects/SADS-1/test/infix.h
 

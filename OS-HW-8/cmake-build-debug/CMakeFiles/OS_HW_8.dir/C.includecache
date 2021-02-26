@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/osobiehl/CLionProjects/OS-HW-8/client.c
+event2/event.h
+-
+
 /home/osobiehl/CLionProjects/OS-HW-8/main.c
 stdio.h
 -
@@ -27,4 +31,10 @@ stdlib.h
 -
 sys/wait.h
 -
+fcntl.h
+-
+event.h
+-
+client.c
+/home/osobiehl/CLionProjects/OS-HW-8/client.c
 

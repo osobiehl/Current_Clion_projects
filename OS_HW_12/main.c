@@ -16,7 +16,7 @@ static char stack[STACK_SIZE];
 static int child(void *ignored)
 {
 	printf("child pid is: %d\n"
-		"parent pid is %d\n", getpid(), getppid());
+		"parent pid from child process is %d\n", getpid(), getppid());
 	execl("/bin/sh", "sh", NULL);
 	perror("execl");
 	return 1;
@@ -29,6 +29,7 @@ int main(void)
 		perror("clone");
 		return 1;
 	}
+	printf("pid from parent process is %d\n", pid);
 	(void) waitpid(pid, NULL, 0);
 	return 0;
 }

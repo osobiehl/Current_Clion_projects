@@ -37,48 +37,8 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rpn">
-				<Option output="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/librpn.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/osobiehl/CLionProjects/SADS-1"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rpn"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="rpn/fast">
-				<Option output="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/librpn.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="2"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/home/osobiehl/CLionProjects/SADS-1"/>
-					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/usr/include/x86_64-linux-gnu"/>
-					<Add directory="/usr/include"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rpn/fast"/>
-					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="SADS_1">
-				<Option output="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/SADS_1" prefix_auto="0" extension_auto="0"/>
+			<Target title="test_stack">
+				<Option output="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/test_stack" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -91,14 +51,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 SADS_1"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_stack"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="SADS_1/fast">
-				<Option output="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/SADS_1" prefix_auto="0" extension_auto="0"/>
+			<Target title="test_stack/fast">
+				<Option output="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/test_stack" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -111,7 +71,7 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 SADS_1/fast"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_stack/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -157,11 +117,11 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test_stack">
-				<Option output="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/test_stack" prefix_auto="0" extension_auto="0"/>
+			<Target title="infix">
+				<Option output="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/libinfix.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug"/>
 				<Option object_output="./"/>
-				<Option type="1"/>
+				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/home/osobiehl/CLionProjects/SADS-1"/>
@@ -171,14 +131,74 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_stack"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 infix"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="test_stack/fast">
-				<Option output="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/test_stack" prefix_auto="0" extension_auto="0"/>
+			<Target title="infix/fast">
+				<Option output="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/libinfix.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/osobiehl/CLionProjects/SADS-1"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 infix/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rpn">
+				<Option output="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/librpn.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/osobiehl/CLionProjects/SADS-1"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rpn"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rpn/fast">
+				<Option output="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/librpn.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/osobiehl/CLionProjects/SADS-1"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rpn/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="run_infix">
+				<Option output="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/run_infix" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -191,29 +211,104 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 test_stack/fast"/>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 run_infix"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="run_infix/fast">
+				<Option output="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/run_infix" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/osobiehl/CLionProjects/SADS-1"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 run_infix/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rpnCalc">
+				<Option output="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/rpnCalc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/osobiehl/CLionProjects/SADS-1"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rpnCalc"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rpnCalc/fast">
+				<Option output="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/rpnCalc" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/osobiehl/CLionProjects/SADS-1"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rpnCalc/fast"/>
 					<CompileFile command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j12 -f &quot;/home/osobiehl/CLionProjects/SADS-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/osobiehl/CLionProjects/SADS-1/infix.c">
+			<Option target="infix"/>
+			<Option target="run_infix"/>
+		</Unit>
+		<Unit filename="/home/osobiehl/CLionProjects/SADS-1/infix.h">
+			<Option target="infix"/>
+			<Option target="run_infix"/>
+		</Unit>
 		<Unit filename="/home/osobiehl/CLionProjects/SADS-1/main.c">
-			<Option target="SADS_1"/>
+			<Option target="rpnCalc"/>
 		</Unit>
 		<Unit filename="/home/osobiehl/CLionProjects/SADS-1/rpn.c">
 			<Option target="rpn"/>
-			<Option target="SADS_1"/>
+			<Option target="run_infix"/>
+			<Option target="rpnCalc"/>
 		</Unit>
 		<Unit filename="/home/osobiehl/CLionProjects/SADS-1/rpn.h">
-			<Option target="SADS_1"/>
+			<Option target="run_infix"/>
+			<Option target="rpnCalc"/>
 		</Unit>
 		<Unit filename="/home/osobiehl/CLionProjects/SADS-1/rpn_stack.c">
-			<Option target="SADS_1"/>
 			<Option target="rpn_stack"/>
+			<Option target="run_infix"/>
+			<Option target="rpnCalc"/>
 		</Unit>
 		<Unit filename="/home/osobiehl/CLionProjects/SADS-1/rpn_stack.h">
-			<Option target="SADS_1"/>
+			<Option target="run_infix"/>
+			<Option target="rpnCalc"/>
+		</Unit>
+		<Unit filename="/home/osobiehl/CLionProjects/SADS-1/run_infix.c">
+			<Option target="run_infix"/>
 		</Unit>
 		<Unit filename="/home/osobiehl/CLionProjects/SADS-1/test/test_stack.c">
 			<Option target="test_stack"/>

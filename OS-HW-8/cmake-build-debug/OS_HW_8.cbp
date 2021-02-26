@@ -76,7 +76,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/osobiehl/CLionProjects/OS-HW-8/clnt_join.c">
+		<Unit filename="/home/osobiehl/CLionProjects/OS-HW-8/client.c">
 			<Option target="OS_HW_8"/>
 		</Unit>
 		<Unit filename="/home/osobiehl/CLionProjects/OS-HW-8/main.c">

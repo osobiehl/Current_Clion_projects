@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/osobiehl/CLionProjects/testerino/main.cpp
+iostream
+-
+stack.h
+/home/osobiehl/CLionProjects/testerino/stack.h
+cstring
+-
+
+/home/osobiehl/CLionProjects/testerino/stack.h
+string.h
+-
+stdio.h
+-
+

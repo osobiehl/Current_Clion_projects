@@ -131,30 +131,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named rpn
+# Target rules for targets named test_stack
 
 # Build rule for target.
-rpn: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rpn
-.PHONY : rpn
+test_stack: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_stack
+.PHONY : test_stack
 
 # fast build rule for target.
-rpn/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn.dir/build.make CMakeFiles/rpn.dir/build
-.PHONY : rpn/fast
-
-#=============================================================================
-# Target rules for targets named SADS_1
-
-# Build rule for target.
-SADS_1: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SADS_1
-.PHONY : SADS_1
-
-# fast build rule for target.
-SADS_1/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SADS_1.dir/build.make CMakeFiles/SADS_1.dir/build
-.PHONY : SADS_1/fast
+test_stack/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_stack.dir/build.make CMakeFiles/test_stack.dir/build
+.PHONY : test_stack/fast
 
 #=============================================================================
 # Target rules for targets named rpn_stack
@@ -170,17 +157,86 @@ rpn_stack/fast:
 .PHONY : rpn_stack/fast
 
 #=============================================================================
-# Target rules for targets named test_stack
+# Target rules for targets named infix
 
 # Build rule for target.
-test_stack: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_stack
-.PHONY : test_stack
+infix: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 infix
+.PHONY : infix
 
 # fast build rule for target.
-test_stack/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test_stack.dir/build.make CMakeFiles/test_stack.dir/build
-.PHONY : test_stack/fast
+infix/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infix.dir/build.make CMakeFiles/infix.dir/build
+.PHONY : infix/fast
+
+#=============================================================================
+# Target rules for targets named rpn
+
+# Build rule for target.
+rpn: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rpn
+.PHONY : rpn
+
+# fast build rule for target.
+rpn/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn.dir/build.make CMakeFiles/rpn.dir/build
+.PHONY : rpn/fast
+
+#=============================================================================
+# Target rules for targets named run_infix
+
+# Build rule for target.
+run_infix: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 run_infix
+.PHONY : run_infix
+
+# fast build rule for target.
+run_infix/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_infix.dir/build.make CMakeFiles/run_infix.dir/build
+.PHONY : run_infix/fast
+
+#=============================================================================
+# Target rules for targets named rpnCalc
+
+# Build rule for target.
+rpnCalc: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rpnCalc
+.PHONY : rpnCalc
+
+# fast build rule for target.
+rpnCalc/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpnCalc.dir/build.make CMakeFiles/rpnCalc.dir/build
+.PHONY : rpnCalc/fast
+
+infix.o: infix.c.o
+
+.PHONY : infix.o
+
+# target to build an object file
+infix.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infix.dir/build.make CMakeFiles/infix.dir/infix.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_infix.dir/build.make CMakeFiles/run_infix.dir/infix.c.o
+.PHONY : infix.c.o
+
+infix.i: infix.c.i
+
+.PHONY : infix.i
+
+# target to preprocess a source file
+infix.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infix.dir/build.make CMakeFiles/infix.dir/infix.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_infix.dir/build.make CMakeFiles/run_infix.dir/infix.c.i
+.PHONY : infix.c.i
+
+infix.s: infix.c.s
+
+.PHONY : infix.s
+
+# target to generate assembly for a file
+infix.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/infix.dir/build.make CMakeFiles/infix.dir/infix.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_infix.dir/build.make CMakeFiles/run_infix.dir/infix.c.s
+.PHONY : infix.c.s
 
 main.o: main.c.o
 
@@ -188,7 +244,7 @@ main.o: main.c.o
 
 # target to build an object file
 main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SADS_1.dir/build.make CMakeFiles/SADS_1.dir/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpnCalc.dir/build.make CMakeFiles/rpnCalc.dir/main.c.o
 .PHONY : main.c.o
 
 main.i: main.c.i
@@ -197,7 +253,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SADS_1.dir/build.make CMakeFiles/SADS_1.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpnCalc.dir/build.make CMakeFiles/rpnCalc.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -206,7 +262,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SADS_1.dir/build.make CMakeFiles/SADS_1.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpnCalc.dir/build.make CMakeFiles/rpnCalc.dir/main.c.s
 .PHONY : main.c.s
 
 rpn.o: rpn.c.o
@@ -216,7 +272,8 @@ rpn.o: rpn.c.o
 # target to build an object file
 rpn.c.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn.dir/build.make CMakeFiles/rpn.dir/rpn.c.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SADS_1.dir/build.make CMakeFiles/SADS_1.dir/rpn.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_infix.dir/build.make CMakeFiles/run_infix.dir/rpn.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpnCalc.dir/build.make CMakeFiles/rpnCalc.dir/rpn.c.o
 .PHONY : rpn.c.o
 
 rpn.i: rpn.c.i
@@ -226,7 +283,8 @@ rpn.i: rpn.c.i
 # target to preprocess a source file
 rpn.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn.dir/build.make CMakeFiles/rpn.dir/rpn.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SADS_1.dir/build.make CMakeFiles/SADS_1.dir/rpn.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_infix.dir/build.make CMakeFiles/run_infix.dir/rpn.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpnCalc.dir/build.make CMakeFiles/rpnCalc.dir/rpn.c.i
 .PHONY : rpn.c.i
 
 rpn.s: rpn.c.s
@@ -236,7 +294,8 @@ rpn.s: rpn.c.s
 # target to generate assembly for a file
 rpn.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn.dir/build.make CMakeFiles/rpn.dir/rpn.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SADS_1.dir/build.make CMakeFiles/SADS_1.dir/rpn.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_infix.dir/build.make CMakeFiles/run_infix.dir/rpn.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpnCalc.dir/build.make CMakeFiles/rpnCalc.dir/rpn.c.s
 .PHONY : rpn.c.s
 
 rpn_stack.o: rpn_stack.c.o
@@ -245,8 +304,9 @@ rpn_stack.o: rpn_stack.c.o
 
 # target to build an object file
 rpn_stack.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SADS_1.dir/build.make CMakeFiles/SADS_1.dir/rpn_stack.c.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn_stack.dir/build.make CMakeFiles/rpn_stack.dir/rpn_stack.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_infix.dir/build.make CMakeFiles/run_infix.dir/rpn_stack.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpnCalc.dir/build.make CMakeFiles/rpnCalc.dir/rpn_stack.c.o
 .PHONY : rpn_stack.c.o
 
 rpn_stack.i: rpn_stack.c.i
@@ -255,8 +315,9 @@ rpn_stack.i: rpn_stack.c.i
 
 # target to preprocess a source file
 rpn_stack.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SADS_1.dir/build.make CMakeFiles/SADS_1.dir/rpn_stack.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn_stack.dir/build.make CMakeFiles/rpn_stack.dir/rpn_stack.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_infix.dir/build.make CMakeFiles/run_infix.dir/rpn_stack.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpnCalc.dir/build.make CMakeFiles/rpnCalc.dir/rpn_stack.c.i
 .PHONY : rpn_stack.c.i
 
 rpn_stack.s: rpn_stack.c.s
@@ -265,9 +326,37 @@ rpn_stack.s: rpn_stack.c.s
 
 # target to generate assembly for a file
 rpn_stack.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/SADS_1.dir/build.make CMakeFiles/SADS_1.dir/rpn_stack.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn_stack.dir/build.make CMakeFiles/rpn_stack.dir/rpn_stack.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_infix.dir/build.make CMakeFiles/run_infix.dir/rpn_stack.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpnCalc.dir/build.make CMakeFiles/rpnCalc.dir/rpn_stack.c.s
 .PHONY : rpn_stack.c.s
+
+run_infix.o: run_infix.c.o
+
+.PHONY : run_infix.o
+
+# target to build an object file
+run_infix.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_infix.dir/build.make CMakeFiles/run_infix.dir/run_infix.c.o
+.PHONY : run_infix.c.o
+
+run_infix.i: run_infix.c.i
+
+.PHONY : run_infix.i
+
+# target to preprocess a source file
+run_infix.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_infix.dir/build.make CMakeFiles/run_infix.dir/run_infix.c.i
+.PHONY : run_infix.c.i
+
+run_infix.s: run_infix.c.s
+
+.PHONY : run_infix.s
+
+# target to generate assembly for a file
+run_infix.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/run_infix.dir/build.make CMakeFiles/run_infix.dir/run_infix.c.s
+.PHONY : run_infix.c.s
 
 test/test_stack.o: test/test_stack.c.o
 
@@ -304,10 +393,15 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... SADS_1"
+	@echo "... infix"
 	@echo "... rpn"
+	@echo "... rpnCalc"
 	@echo "... rpn_stack"
+	@echo "... run_infix"
 	@echo "... test_stack"
+	@echo "... infix.o"
+	@echo "... infix.i"
+	@echo "... infix.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -317,6 +411,9 @@ help:
 	@echo "... rpn_stack.o"
 	@echo "... rpn_stack.i"
 	@echo "... rpn_stack.s"
+	@echo "... run_infix.o"
+	@echo "... run_infix.i"
+	@echo "... run_infix.s"
 	@echo "... test/test_stack.o"
 	@echo "... test/test_stack.i"
 	@echo "... test/test_stack.s"

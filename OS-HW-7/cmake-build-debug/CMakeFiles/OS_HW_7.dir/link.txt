@@ -1,1 +1,1 @@
-/usr/bin/cc -g   CMakeFiles/OS_HW_7.dir/main.c.o CMakeFiles/OS_HW_7.dir/test.c.o  -o OS_HW_7 
+/usr/bin/cc -g   CMakeFiles/OS_HW_7.dir/main.c.o  -o OS_HW_7 
